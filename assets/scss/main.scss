@@ -1,0 +1,79 @@
+@import 'base/normalize';
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+ul,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+ul{
+	padding: 0;
+}
+.container{
+	max-width: 1230px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.main-content{}
+.main-page-title{}
+.main-banners{}
+.main-slick{}
+.main-slick-content{}
+.main-slick-content img{}
+.main-page-products{}
+.main-page-title{}
+.products-slick{}
+.products-slick-content{}
+.products-item{}
+.products-item .new-tag{}
+.products-item .sale-tag{}
+.products-item-img{}
+.products-item-img a{}
+.products-item-img a img{}
+.products-item-button{}
+.products-item-name{}
+.products-item-name a{}
+.products-item-name a h4{}
+.products-item-price{}
+.products-item-sizes{}
+.size-item{}
+.size-item.disabled{}
+.products-item-link{}
+.products-item-link a{}
+.about-company{}
+.about-company-text{}
+.about-company-inner{}
+.about-company-left{}
+.about-company-triggers-name{}
+.about-company-triggers{}
+.about-company-trigger{}
+.about-company-triggers-img{}
+.about-company-triggers-img img{}
+.about-company-trigger-name{}
+.about-company-right{}
+.about-company-video{}
+.about-company-video iframe{}
+@import 'pages/home';
+@import 'components/buttons';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'media-requests';

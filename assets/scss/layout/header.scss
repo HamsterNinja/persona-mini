@@ -1,0 +1,123 @@
+.main-header{}
+.main-header-top {
+    background-color: #F0F0F0;
+}
+.main-header-top .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header-top-info-value {
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 40px;
+}
+
+.main-header-top-info-value a {
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.main-header-top-menu li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 25px;
+}
+
+.main-header-top-menu li a {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+.main-header-top-info{}
+.main-header-middle .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main-header-logo{}
+.main-header-choice-version{
+	text-align: center;
+}
+.choice-version-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.choice-version-links{}
+.choice-version-links a{
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: #333333;
+	border-radius: 5px;
+	background: #EDEDED;
+	border-radius: 5px;
+	display: inline-block;
+	text-decoration: none;
+	width: 83px;
+	text-align: center;
+	padding: 5px 5px 6px 5px;
+}
+.choice-version-links a.active{
+	background: #000000;
+	color: #fff;
+}
+.main-header-user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header-favorites{}
+.main-header-favorites a{
+	font-weight: 300;
+	font-size: 10px;
+	line-height: 12px;
+	text-transform: uppercase;	
+	color: #000000;
+	text-decoration: none;
+}
+.main-header-cart{}
+.main-header-cart a{
+	text-decoration: none;
+}
+.main-header-cart a span{
+	font-weight: 300;
+	font-size: 10px;
+	line-height: 14px;
+	text-transform: uppercase;
+	color: #000000;
+}
+.main-header-sign{}
+.main-header-sign a{
+	font-weight: 300;
+	font-size: 10px;
+	line-height: 14px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+}
+.main-header-bottom{}
+.main-header-menu{}
+.main-header-menu ul{}
+.main-header-menu ul li{}
+.main-header-menu ul li a{}
+.main-header-search{}
+.main-header-search form{}
+.main-header-search form .search-text{}
+.main-header-search form .search-submit{}
