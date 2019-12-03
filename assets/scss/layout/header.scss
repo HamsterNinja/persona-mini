@@ -41,6 +41,7 @@
     color: #000000;
     text-decoration: none;
 }
+
 .main-header-top-info{}
 .main-header-middle {
     padding: 29px 0;
@@ -158,9 +159,39 @@
     line-height: 21px;
     text-transform: uppercase;
     color: #000000;
+    background-color: #fff;
     text-decoration: none;
     display: inline-block;
     padding: 13px 0;
+}
+.main-header-menu ul li:nth-child(2) a{   
+    padding-right: 30px;
+    position: relative;
+}
+.main-header-menu ul li:nth-child(2) a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -4px;
+    right: 11px;
+    z-index: -1;
+    width: 28px;
+    height: 38px;
+    background-image: url(../images/perc-back.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+.main-header-menu ul li:nth-child(2) a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 28px;
+    height: 38px;
+    background-image: url(../images/perc.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
 }
 .main-header-search {
     margin-left: 25px;

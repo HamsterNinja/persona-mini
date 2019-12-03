@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2854ca4fb3fcf0e3fc9c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "34777781eb047f8f5cbd"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -927,6 +927,11 @@ $('.products-slick').slick({
     arrows: true,
     dots: false,
     swipeToSlide: true
+});
+$(".sidebar-menu .menu-item-has-children>a").after('<div class="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 160 160"><path d="M70 0h20v160H70z" class="vertical-line"></path> <path d="M0 70h160v20H0z" class="horizontal-line"></path></svg></div>');
+$('.menu-toggle').click(function () {
+    $(this).parent().find('.sub-menu').first().slideToggle();
+    $(this).find('svg').toggleClass('minus');
 });
 
 /***/ }),
