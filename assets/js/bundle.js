@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "34777781eb047f8f5cbd"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "efdea54037005140b019"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -922,6 +922,45 @@ $('.main-slick').slick({
 });
 $('.products-slick').slick({
     slidesToShow: 4,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    arrows: true,
+    dots: false,
+    swipeToSlide: true
+});
+
+$('.quick-slick-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.quick-slick-nav'
+});
+$('.quick-slick-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.quick-slick-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+});
+$('.gallery-slick-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.gallery-slick-nav'
+});
+$('.gallery-slick-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.gallery-slick-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+});
+$('.buy-with-slick').slick({
+    slidesToShow: 3,
     autoplay: false,
     autoplaySpeed: 3000,
     arrows: true,
