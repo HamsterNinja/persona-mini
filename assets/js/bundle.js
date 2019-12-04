@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "efdea54037005140b019"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1c45c2b8c2f08c00db82"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -940,7 +940,6 @@ $('.quick-slick-nav').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.quick-slick-for',
-    dots: true,
     centerMode: true,
     focusOnSelect: true
 });
@@ -955,9 +954,9 @@ $('.gallery-slick-nav').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.gallery-slick-for',
-    dots: true,
-    centerMode: true,
-    focusOnSelect: true
+    vertical: true,
+    focusOnSelect: true,
+    infinite: false
 });
 $('.buy-with-slick').slick({
     slidesToShow: 3,

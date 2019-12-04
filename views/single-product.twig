@@ -12,27 +12,121 @@
 	<div class="product-page-content">
 		<div class="container">
 			<div class="product-page-slider">
-				<div class="gallery-slick-for">
-					<div class="gallery-slick-for-content">
-						<img src="./assets/images/product-slide.jpg" alt="">
-					</div>
-					<div class="gallery-slick-for-content">
-						<img src="./assets/images/product-slide.jpg" alt="">
-					</div>
-					<div class="gallery-slick-for-content">
-						<img src="./assets/images/product-slide.jpg" alt="">
-					</div>
-				</div>
+				<button class="add-favorite"><svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M18.385 2.84a5.49 5.49 0 00-3.914-1.619c-1.48 0-2.87.577-3.918 1.624l-.547.547-.555-.555a5.517 5.517 0 00-3.922-1.629 5.498 5.498 0 00-3.91 1.62A5.482 5.482 0 000 6.746c0 1.48.58 2.866 1.628 3.913l7.963 7.963a.571.571 0 00.806.004l7.98-7.95A5.504 5.504 0 0020 6.76a5.479 5.479 0 00-1.615-3.918zm-.815 7.026l-7.576 7.548-7.56-7.56a4.365 4.365 0 01-1.29-3.108c0-1.175.454-2.277 1.286-3.104a4.359 4.359 0 013.099-1.285c1.174 0 2.281.458 3.112 1.29l.958.958a.57.57 0 00.81 0l.95-.95a4.372 4.372 0 013.108-1.289c1.17 0 2.272.458 3.103 1.285a4.361 4.361 0 011.285 3.108 4.344 4.344 0 01-1.285 3.107z" fill="#F7B5C7"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h20v20H0z"/></clipPath></defs></svg></button>
 				<div class="gallery-slick-nav">
 					<div class="gallery-slick-nav-content">
-						<img src="./assets/images/product-slide.jpg" alt="">
+						<img src="./assets/images/product-b.jpg" alt="">
 					</div>
 					<div class="gallery-slick-nav-content">
-						<img src="./assets/images/product-slide.jpg" alt="">
+						<img src="./assets/images/product-b.jpg" alt="">
 					</div>
 					<div class="gallery-slick-nav-content">
-						<img src="./assets/images/product-slide.jpg" alt="">
+						<img src="./assets/images/product-b.jpg" alt="">
 					</div>
+				</div>
+				<div class="gallery-slick-for">
+					<div class="gallery-slick-for-content">
+						<img src="./assets/images/product-b.jpg" alt="">
+					</div>
+					<div class="gallery-slick-for-content">
+						<img src="./assets/images/product-b.jpg" alt="">
+					</div>
+					<div class="gallery-slick-for-content">
+						<img src="./assets/images/product-b.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="product-info">
+				<div class="product-name"><h2>ФТВ Комбинезон с капюшоном  для мальчика Wild Bear</h2></div>
+				<div class="product-info-content">
+					<div class="prod-code">Арт. 2908878</div>
+					<div class="prod-composition">
+						<span>Материал:</span>
+						Кулирная гладь пенье, 100% х/б
+					</div>
+				</div>
+				<div class="add-card">
+					{% for item in 0..4 %}
+						<div class="add-card-row">
+							<div class="add-card-size disabled">
+								<span>36/57</span>
+								<div class="not-size">
+									<div class="not-size-text">Этого товара нет в наличии</div>
+									<button class="not-size-btn">Сообщить о поступлении</button>
+								</div>
+							</div>
+							<div class="add-card-price">400 р</div>
+							<div class="add-card-quantity">
+								<button class="btn-quant btn-minus"><svg width="10" height="2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1h10" stroke="#000"/></svg></button>
+								<input class="quantity-value" type="number" placeholder="0">
+								<button class="btn-quant btn-plus"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 160 160"><path d="M70 0h20v160H70z"></path><path d="M0 70h160v20H0z"></path></svg></button>
+							</div>
+						</div>
+					{% endfor %}
+					<button class="btn_add-cart">В корзину</button>
+				</div>
+				<div class="sizes-table-link">
+					<a href="">Таблица размеров</a>
+				</div>
+				<div class="product-description">
+					<div class="product-description-name">Описание</div>
+					<div class="product-description-text">Мягкое боди с длинным рукавом и отложным воротничком выполнено из чистого хлопка. Модель декорирована стильным рисунком. Боди дополнено кнопками по всей длине, шаговому шву и на манжетах для удобства переодевания малыша. При соблюдении правил ухода, изделие после стирки сохраняет цвет и форму.</div>
+				</div>
+			</div>
+			<div class="buy-with-this">
+			<div class="buy-with-this-title">С этим товаром покупают</div>
+			<div class="buy-with-slick">
+				{% for item in 0..2 %}
+					<div class="buy-with-slick-content">
+						<div class="products-item">
+							<div class="new-hit">
+								<div class="new-tag">New</div>
+								<div class="sale-tag">Sale</div>
+							</div>
+							<div class="products-item-img">
+								<a class="" href="">
+									<img src="./assets/images/product.jpg" alt="">
+									<div class="products-item-button">Быстрый заказ</div>
+								</a>
+							</div>
+							<div class="products-item-name"><a href=""><h4>Арт. 1098 ФТВ Комбинезон с капюшоном  для мальчика Wild Bear</h4></a></div>
+							<div class="products-item-price">400 р.</div>
+							<div class="products-item-sizes">
+								<div class="size-item">36/57</div>
+								<div class="size-item disabled">36/57</div>
+								<div class="size-item">36/57</div>
+								<div class="size-item disabled">36/57</div>
+								<div class="size-item">36/57</div>
+							</div>
+							<div class="products-item-link"><a href="">Подробнее</a></div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="product-triggers">
+		<div class="container">
+			<div class="product-trigger-item">
+				<div class="product-trigger-item-img"><img src="./assets/images/trig-1.svg" alt=""></div>
+				<div class="product-trigger-item-info">
+					<div class="product-trigger-item-name">ЗАКАЗ</div>
+					<div class="product-trigger-item-text">изделие после стирки сохраняет цвет и форму.</div>
+				</div>
+			</div>
+			<div class="product-trigger-item">
+				<div class="product-trigger-item-img"><img src="./assets/images/trig-2.svg" alt=""></div>
+				<div class="product-trigger-item-info">
+					<div class="product-trigger-item-name">ДОСТАВКА</div>
+					<div class="product-trigger-item-text">изделие после стирки сохраняет цвет и форму.</div>
+				</div>
+			</div>
+			<div class="product-trigger-item">
+				<div class="product-trigger-item-img"><img src="./assets/images/trig-3.svg" alt=""></div>
+				<div class="product-trigger-item-info">
+					<div class="product-trigger-item-name">Контакты</div>
+					<div class="product-trigger-item-text">изделие после стирки сохраняет цвет и форму.</div>
 				</div>
 			</div>
 		</div>
