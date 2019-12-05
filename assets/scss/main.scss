@@ -406,8 +406,8 @@ span.breadcrumbs__current {
     color: #333333;
     text-align: justify;
 }
-.quick-view {
-    max-width: 945px;
+.modal {
+    max-width: 870px;
     width: 100%;
     margin: 0 auto;
     background-color: #fff;
@@ -749,6 +749,28 @@ input.quantity-value {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+}
+.sizes-table-cotent{
+    padding: 25px 0;
+}
+.sizes-table-cotent table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.sizes-table-cotent table tr:nth-child(2n) td {
+    background-color: #fff;
+    padding: 15px 5px;
+}
+
+.sizes-table-cotent table tr td {
+    background-color: #E5E5E5;
+    padding: 7px 5px;
+}
+
+.sizes-table-cotent table tr:first-child td {
+    padding: 13px 5px;
 }
 @import 'pages/home';
 @import 'components/buttons';
