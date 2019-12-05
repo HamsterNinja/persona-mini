@@ -1,0 +1,57 @@
+{% include "partials/header.twig" %}
+<main class='main-content' id="app">
+	<div class="container">
+		<div class="breadcrumbs">
+			<span><a class="breadcrumbs__link" href=""><span>Главная</span></a></span>
+			<span class="breadcrumbs__separator"> / </span>
+			<span><a class="breadcrumbs__link" href=""><span>Каталог</span></a></span>
+			<span class="breadcrumbs__separator"> / </span>
+			<span class="breadcrumbs__current">Малышам</span>
+		</div>
+	</div>
+	<div class="cart-page">
+		<div class="container">
+		<div class="all-page-title"><h1>Корзина</h1></div>
+		<div class="cart-page-content">
+			<table>
+				<thead>
+					<tr>
+						<td>№</td>
+						<td>Изображение</td>
+						<td>Наименование</td>
+						<td>Артикул</td>
+						<td>Размер</td>
+						<td>Рост</td>
+						<td>Цена за 1 шт.</td>
+						<td>Кол-во шт.</td>
+						<td>Стоимость</td>
+					</tr>
+				</thead>	
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td><img src="./assets/images/product.jpg" alt=""></td>
+						<td>
+							<div class="name_prod">Водолазка для мальчика (98, Меланжево-серый)</div>
+							<div class="del_prod"><a href="">Удалить из корзины</a></div>
+						</td>
+						<td>Арт. 2908878</td>
+						<td>40</td>
+						<td>62</td>
+						<td>483 Р.</td>
+						<td>
+							<div class="add-card-quantity">
+								<button class="btn-quant btn-minus"><svg width="10" height="2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1h10" stroke="#000"/></svg></button>
+								<input class="quantity-value" type="number" placeholder="0">
+								<button class="btn-quant btn-plus"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 160 160"><path d="M70 0h20v160H70z"></path><path d="M0 70h160v20H0z"></path></svg></button>
+							</div>
+						</td>
+						<td>483 Р.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	</div>
+</main>
+{% include "partials/footer.twig" %}

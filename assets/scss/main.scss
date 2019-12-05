@@ -772,6 +772,49 @@ input.quantity-value {
 .sizes-table-cotent table tr:first-child td {
     padding: 13px 5px;
 }
+.cart-page-content table {
+    border-collapse: collapse;
+    text-align: center;
+}
+.cart-page-content table thead tr td {
+    background-color: #EDEDED;
+    border: 1px solid #fff;
+    padding: 15px 5px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+.cart-page-content table tr td {
+    border: 1px solid #EDEDED;
+}
+.cart-page-content table tr td:nth-child(1){
+    width: 47px;
+}
+.cart-page-content table tr td:nth-child(2){
+    width: 147px;
+}
+.cart-page-content table tr td:nth-child(3){
+    width:;
+}
+.cart-page-content table tr td:nth-child(4){
+    width: 80px;
+}
+.cart-page-content table tr td:nth-child(5){
+    width: 105px;
+}
+.cart-page-content table tr td:nth-child(6){
+    width: 88px;
+}
+.cart-page-content table tr td:nth-child(7){
+    width: 99px;
+}
+.cart-page-content table tr td:nth-child(8){
+    width: 175px;
+}
+.cart-page-content table tr td:nth-child(9){
+    width: 138px;
+}
 @import 'pages/home';
 @import 'components/buttons';
 @import 'layout/header';
