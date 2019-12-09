@@ -41,7 +41,7 @@
     						<span>Корзина</span>
     						<span>0 руб.</span>
     				</a></div>
-    				<div class="main-header-sign"><a href="">Вход/<br>Регистрация</a></div>
+    				<div class="main-header-sign"><a class="js_alModal" data-modal="js_modal-1" href="">Вход/<br>Регистрация</a></div>
     			</div>
     		</div>
     	</div>
@@ -66,7 +66,7 @@
     		</div>
     	</div>
     </header>
-<main class='main-content' id="app">
+<main class='main-content'>
 	<div class="container">
 		<div class="breadcrumbs">
 			<span><a class="breadcrumbs__link" href=""><span>Главная</span></a></span>
@@ -887,10 +887,79 @@
 			</table>
 		</div>
 	</div>
+	<div class="overlay"></div>
+<div class="alModal js_modal-1">
+        <span class="alModalClose js_alModalClose"></span>
+        <div class="alModalContent alModalContent--modal">
+            <p>Войти в личный кабинет</p>
+            <form action="javascript:void(0);" id="">
+                <input required="" name="name" class="alModalInput alModalInputName" type="text" placeholder="Логин">
+                <input required="" name="phone" class="alModalInput alModalInputphone" type="tel" placeholder="Пароль">
+                <div class="forgot-pswrd"><a href="">Забыли пароль?</a></div>
+                <input type="submit" class="modal alModalButton" name="--" value="Войти">
+                <div class="sign-up"><a href="">Зарегистирироваться</a></div>
+            </form>
+            <div class="under-form-text">Вы сможете отслеживать статус своих заказов и получать индивидуальные рекомендации</div>
+        </div>
+        </div>
 </footer>
 <script src="assets/js/vendors/jquery-3.4.1.min.js"></script>
 <script src="assets/js/vendors/slick.js"></script>
 <script src="assets/js/bundle.js"></script>
+<script type="text/javascript">
+function showModal(modalName) {
+        $('.overlay').fadeIn(500,
+            function() {
+                var ModalLeft = ($(window).width() - $(modalName).outerWidth()) / 2;
+                var ModalTop = (window.innerHeight - $(modalName).outerHeight()) / 2;
+                $(modalName).removeAttr('css');
+                if (ModalTop <= 50) {
+                    ModalTop = 20;
+                    
+                }
+                setTimeout(function() {
+                    $(modalName)
+                        .css('display', 'block')
+                        .animate({
+                            opacity: 1,
+                            left: ModalLeft + 'px',
+                            top: ModalTop + 'px'
+                        }, 300);
+                }, 50)
+            });
+    }
+jQuery(document).ready(function($) {
+    var ModalTop;
+  
+
+    
+    $(window).resize(function(event) {
+        if ($('.alModal').is(':visible')) showModal('.alModal:visible');
+    });
+
+
+$(document).on('click', '.js_alModal', function(){ 
+        event.preventDefault();
+        var modalClass = '.' + $(this).attr('data-modal');
+        showModal(modalClass); 
+});
+
+    $('.js_alModalClose, .overlay').click(function() {
+        $('.alModal').animate({
+                opacity: 0
+            }, 200,
+            function() {
+                $(this).css({
+                    'display': 'none',
+                    'top': '100%',
+                    'left': '50%'
+                });
+                $('.overlay').fadeOut(400);
+            }
+        );
+    });
+});
+</script>
 </body>
 
 </html>

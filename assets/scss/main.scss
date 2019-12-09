@@ -1017,6 +1017,206 @@ button.next-step {
     align-self: flex-end;
     margin-top: 5px;
 }
+
+/* modals */
+
+.alModal {
+    width: 96%;
+    max-width: 360px;
+    height: auto;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    font-family: sans-serif;
+    opacity: 0;
+    top: 100%;
+    left: 50%;
+    box-sizing: border-box;
+}
+span.alModalClose:before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 42%;
+}
+
+.alModalClose {
+    cursor: pointer;
+    width: 16px;
+    display: block;
+    text-align: center;
+    float: right;
+    position: absolute;
+    top: 12px;
+    right: 9px;
+    z-index: 101;
+    color: #000;
+    font-size: 12px;
+    height: 16px;
+    line-height: 26px;
+    font-family: sans-serif;
+}
+
+span.alModalClose:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 42%;
+    left: 0%;
+}
+
+.alModalClose:hover {
+    color: #ffffff;
+}
+
+.alModal p {
+    position: relative;
+    display: block;
+    text-align: left;
+    margin: 0 0 20px 0;
+    padding: 0px 5px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+}
+.alModal p a{
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+}
+.alModalThank {
+    max-width: 500px;
+}
+
+.alModal .thank_ico {
+    color: #42AD41;
+    padding: 10px 10px 0;
+    font-size: 50px;
+    display: inline-block;
+    line-height: 1;
+    border-radius: 50%;
+    width: 65px;
+    text-align: center;
+    height: 65px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.alModal .thank_words {
+    display: inline-block;
+    color: #333;
+    padding-left: 15px;
+    line-height: 1.4;
+    font-size: 17px;
+    width: 73%;
+    vertical-align: middle;
+}
+
+.overlay {
+    z-index: 70;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.alModalContent {
+    padding: 20px 28px 60px;
+    background: #fff;
+}
+.alModalContent form{
+    margin-bottom: 15px;
+}
+.alModalContent .alModalInput {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    padding: 9px 10px;
+    height: auto;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 14px;
+    background: #FFFFFF;
+    border: 1px solid #EDEDED;
+}
+
+.alModal .alModalButton {
+    position: relative;
+    display: block;
+    margin: 0 auto 15px;
+    color: #000;
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+    padding: 8px;
+    transition: 0.5s ease;
+    box-sizing: border-box;
+    border: 1px solid #ededed;
+    width: 230px;
+    background: #EDEDED;
+}
+.alModal .alModalButton:hover {
+    background: #fff;
+    color: #FF6600;
+}
+.forgot-pswrd {
+    text-align: right;
+    margin-bottom: 19px;
+}
+.forgot-pswrd a {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+    text-decoration: none;
+}
+.sign-up {
+    text-align: center;
+}
+
+.sign-up a {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-decoration: none;
+    background-image: url(../images/sign.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding-right: 15px;
+}
+.under-form-text {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    color: #C4C4C4;
+    width: 230px;
+    margin: 0 auto;
+}
+/* modals */
 @import 'pages/home';
 @import 'components/buttons';
 @import 'layout/header';
