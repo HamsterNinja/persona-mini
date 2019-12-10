@@ -1,0 +1,29 @@
+{% include "partials/header.twig" %}
+<main class='main-content'>
+    <div class="container">
+        <div class="breadcrumbs">
+            <span><a class="breadcrumbs__link" href=""><span>Главная</span></a></span>
+            <span class="breadcrumbs__separator"> / </span>
+            <span><a class="breadcrumbs__link" href=""><span>Каталог</span></a></span>
+            <span class="breadcrumbs__separator"> / </span>
+            <span class="breadcrumbs__current">Малышам</span>
+        </div>
+    </div>
+    <div class="account-container container">
+        <div class="account-sidebar">
+            <div class="account-sidebar__title">Личный кабинет</div>
+            <a href="{{ site_url }}/cabinet?tp=history">Мои заказы</a>
+            <a href="{{ site_url }}/cabinet?tp=favorites">Избранное</a>
+            <a href="{{ site_url }}/cabinet?tp=data">Личная информация</a>       
+        </div>
+        <div class="account-content">
+            <div class="account-content-page">
+                <div class="account-content-page__header">Товары</div>
+                <div class="account-content-page__description">
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% include "partials/footer.twig" %}
