@@ -75,19 +75,150 @@
             <span class="breadcrumbs__separator"> / </span>
             <span class="breadcrumbs__current">Малышам</span>
         </div>
+        <div class="all-page-title"><h1>Личный кабинет</h1></div>
     </div>
     <div class="account-container container">
+        
         <div class="account-sidebar">
-            <div class="account-sidebar__title">Личный кабинет</div>
-            <a href="/cabinet?tp=history">Мои заказы</a>
-            <a href="/cabinet?tp=favorites">Избранное</a>
-            <a href="/cabinet?tp=data">Личная информация</a>       
+            <div class="account-name">Иванов Иван</div>
+            <div class="account-link"><a href="/cabinet?tp=history">Мои заказы</a></div>
+            <div class="account-link"><a href="/cabinet?tp=favorites">Избранное</a></div>
+            <div class="account-link"><a href="/cabinet?tp=data">Личная информация</a></div> 
+            <a class="exit-link" href="">Выйти из личного кабинета</a>      
         </div>
         <div class="account-content">
+            
             <div class="account-content-page">
-                <div class="account-content-page__header">Товары</div>
+                <div class="account-content-page__header">Товары <span class="products-count">Всего в избранном 3 товара</span></div>
                 <div class="account-content-page__description">
+                    <div class="catalog-inner">
                         
+                        <div class="products-item">
+                            <div class="new-hit">
+                                <div class="new-tag">New</div>
+                                <div class="sale-tag">Sale</div>
+                            </div>
+                            <div class="products-item-img">
+                                <a class="js_alModal" data-modal="js_modal-1" href="">
+                                    <img src="./assets/images/product.jpg" alt="">
+                                    <div class="products-item-button">Быстрый заказ</div>
+                                </a>
+                            </div>
+                            <div class="products-item-name"><a href=""><h4>Арт. 1098 ФТВ Комбинезон с капюшоном  для мальчика Wild Bear</h4></a></div>
+                            <div class="products-item-price">400 р.</div>
+                            <div class="products-item-sizes">
+                                <div class="size-item">36/57</div>
+                                <div class="size-item disabled">36/57</div>
+                                <div class="size-item">36/57</div>
+                                <div class="size-item disabled">36/57</div>
+                                <div class="size-item">36/57</div>
+                            </div>
+                            <div class="products-item-link"><a href="">Подробнее</a></div>
+                        </div>
+                        
+                        <div class="products-item">
+                            <div class="new-hit">
+                                <div class="new-tag">New</div>
+                                <div class="sale-tag">Sale</div>
+                            </div>
+                            <div class="products-item-img">
+                                <a class="js_alModal" data-modal="js_modal-1" href="">
+                                    <img src="./assets/images/product.jpg" alt="">
+                                    <div class="products-item-button">Быстрый заказ</div>
+                                </a>
+                            </div>
+                            <div class="products-item-name"><a href=""><h4>Арт. 1098 ФТВ Комбинезон с капюшоном  для мальчика Wild Bear</h4></a></div>
+                            <div class="products-item-price">400 р.</div>
+                            <div class="products-item-sizes">
+                                <div class="size-item">36/57</div>
+                                <div class="size-item disabled">36/57</div>
+                                <div class="size-item">36/57</div>
+                                <div class="size-item disabled">36/57</div>
+                                <div class="size-item">36/57</div>
+                            </div>
+                            <div class="products-item-link"><a href="">Подробнее</a></div>
+                        </div>
+                        
+                        <div class="products-item">
+                            <div class="new-hit">
+                                <div class="new-tag">New</div>
+                                <div class="sale-tag">Sale</div>
+                            </div>
+                            <div class="products-item-img">
+                                <a class="js_alModal" data-modal="js_modal-1" href="">
+                                    <img src="./assets/images/product.jpg" alt="">
+                                    <div class="products-item-button">Быстрый заказ</div>
+                                </a>
+                            </div>
+                            <div class="products-item-name"><a href=""><h4>Арт. 1098 ФТВ Комбинезон с капюшоном  для мальчика Wild Bear</h4></a></div>
+                            <div class="products-item-price">400 р.</div>
+                            <div class="products-item-sizes">
+                                <div class="size-item">36/57</div>
+                                <div class="size-item disabled">36/57</div>
+                                <div class="size-item">36/57</div>
+                                <div class="size-item disabled">36/57</div>
+                                <div class="size-item">36/57</div>
+                            </div>
+                            <div class="products-item-link"><a href="">Подробнее</a></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="account-content-page">
+                <div class="account-content-page__header">Личная информация <a class="change-password" href="">Сменить пароль</a></div>
+                <div class="account-content-page__description">
+                    <form action="">
+                        <label for="">
+                            <p>Фамилия*</p>
+                            <input type="text" placeholder="Иванов">
+                        </label>
+                        <label for="">
+                            <p>Имя*</p>
+                            <input type="text" placeholder="Иван">
+                        </label>
+                        <label for="">
+                            <p>Отчество</p>
+                            <input type="text" placeholder="Иванович">
+                        </label>
+                        <label for="">
+                            <p>Город</p>
+                            <input type="text" placeholder="Москва">
+                        </label>
+                        <label for="">
+                            <p>Организация*</p>
+                            <input type="text" placeholder="Магазин “Малыш”">
+                        </label>
+                        <label for="">
+                            <p>ОГРН*</p>
+                            <input type="text" placeholder="ОГРН*">
+                        </label>
+                        <label for="">
+                            <p>Контактный телефон*</p>
+                            <input type="text" placeholder="Контактный телефон*">
+                        </label>
+                        <label for="">
+                            <p>E-mail*</p>
+                            <input type="text" placeholder="E-mail*">
+                        </label>
+                        <label for="">
+                            <p>Пароль*</p>
+                            <input type="text" placeholder="Пароль*">
+                        </label>
+                        <label for="">
+                            <p>Подтверждение пароля*</p>
+                            <input type="text" placeholder="Подтверждение пароля*">
+                        </label>
+                        <button class="save-changes">Сохранить изменения</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="account-content-page">
+                <div class="account-content-page__header">Мои заказы <span class="products-count">Всего 4 заказа</span></div>
+                <div class="account-content-page__description">
+                    
                 </div>
             </div>
         </div>

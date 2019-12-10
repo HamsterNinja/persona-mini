@@ -1390,6 +1390,113 @@ span.alModalClose:after {
     margin: 0 auto;
 }
 /* modals */
+
+
+
+.account-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 50px;
+}
+.account-sidebar {
+    width: 290px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 20px 24px;
+}
+
+
+.account-name {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.account-link {
+    margin-bottom: 15px;
+}
+.account-link a {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    text-decoration: none;
+}
+a.exit-link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+    text-align: center;
+    padding: 15px 0;
+    background-image: url(../images/logout.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+.account-content {
+    width: calc(100% - 320px);
+}
+.account-content-page__header {
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 16px 30px;
+    margin-bottom: 40px;
+}
+.account-content-page__header .products-count {
+    margin-left: 40px;
+    margin-bottom: -2px;
+}
+a.change-password {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.account-content-page__description form {
+    padding: 0 60px 0 5px;
+}
+.account-content-page__description form label {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.account-content-page__description form label p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #A7A7A7;
+    width: 240px;
+    margin: 0;
+}
+.account-content-page__description form label input {
+    width: calc(100% - 240px);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 5px 10px;
+    border: 1px solid #EDEDED;
+}
+button.save-changes {
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #EDEDED;
+    border: 1px solid #EDEDED;
+    padding: 8px 20px;
+    margin-top: 40px;
+}
 @import 'pages/home';
 @import 'components/buttons';
 @import 'components/modals';
