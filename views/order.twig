@@ -1,0 +1,133 @@
+{% include "partials/header.twig" %}
+<main class='main-content'>
+	<div class="container">
+		<div class="breadcrumbs">
+			<span><a class="breadcrumbs__link" href=""><span>Главная</span></a></span>
+			<span class="breadcrumbs__separator"> / </span>
+			<span><a class="breadcrumbs__link" href=""><span>Каталог</span></a></span>
+			<span class="breadcrumbs__separator"> / </span>
+			<span class="breadcrumbs__current">Малышам</span>
+		</div>
+	</div>
+	<div class="order-content">
+		<div class="container">
+			<div class="all-page-title"><h1>Оформление заказа</h1></div>
+			<div class="under-title-text">
+				<p>Проверьте правильность заполнения данных.</p> 
+				<p>Эти данные будут использоваться для формирования счёта</p>
+			</div>
+
+			<div class="order-content-inner">
+				<form action="">
+					<div class="order-form">
+						<label class="order-label" for="">
+							<p>Фамилия*:</p>
+							<input type="text" placeholder="Иванов">
+						</label>
+						<label class="order-label" for="">
+							<p>Имя*:</p>
+							<input type="text" placeholder="Иван">
+						</label>
+						<label class="order-label" for="">
+							<p>Отчество*:</p>
+							<input type="text" placeholder="Иванович">
+						</label>
+						<label class="order-label" for="">
+							<p>Город*:</p>
+							<input type="text" placeholder="Москва">
+						</label>
+						<label class="order-label" for="">
+							<p>Организация*:</p>
+							<input type="text" placeholder="ИП">
+						</label>
+						<label class="order-label" for="">
+							<p>Контактный номер*:</p>
+							<input type="text" placeholder="+7 (000) 000-00-00">
+						</label>
+						<label class="order-label" for="">
+							<p>E-mail*:</p>
+							<input type="text" placeholder="E-mail">
+						</label class="order-label">
+						<div class="order-form-name">Способ доставки</div>
+						<label class="order-label" for="">
+							<p>Транспортная компания</p>
+							<select name="" id="">
+								<option disabled selected value="">Выберите из списка</option>
+								<option value="">Выберите из списка</option>
+								<option value="">Выберите из списка</option>
+							</select>
+						</label>
+						<div class="control-group">
+    						<label class="control control-radio">
+    						    До терминала
+    						        <input type="radio" name="delivery" checked="checked" />
+    						    <div class="control_indicator"></div>
+    						</label>
+    						<label class="control control-radio">
+    						    До адреса
+    						        <input type="radio" name="delivery" />
+    						    <div class="control_indicator"></div>
+    						</label>
+						</div>
+						<div class="delivery-address">
+							<label class="order-label" for="">
+								<p>Индекс*:</p>
+								<input type="text" placeholder="">
+							</label class="order-label">
+							<label class="order-label" for="">
+								<p>Страна*:</p>
+								<input type="text" placeholder="">
+							</label class="order-label">
+							<label class="order-label" for="">
+								<p>Область*:</p>
+								<input type="text" placeholder="">
+							</label class="order-label">
+							<label class="order-label" for="">
+								<p>Город*:</p>
+								<input type="text" placeholder="">
+							</label class="order-label">
+							<label class="order-label" for="">
+								<p>Улица*:</p>
+								<input type="text" placeholder="">
+							</label class="order-label">
+							<label class="order-label" for="">
+								<p>Дом*:</p>
+								<input type="text" placeholder="">
+							</label class="order-label">
+							<label class="order-label" for="">
+								<p>Офис/квартира:</p>
+								<input type="text" placeholder="">
+							</label class="order-label">
+						</div>
+						<label class="order-label" for="">
+							<p>Примечания</p>
+							<textarea name="" id=""></textarea>
+						</label>
+					</div>
+					<div class="order-form-total">
+						<div class="order-form-total-inner">
+							<div class="control-group">
+    						<label class="control control-radio">
+    						    Получить счёт
+    						        <input type="radio" name="pay" checked="checked" />
+    						    <div class="control_indicator"></div>
+    						</label>
+    						<label class="control control-radio">
+    						    Оплатить on-line
+    						        <input type="radio" name="pay" />
+    						    <div class="control_indicator"></div>
+    						</label>
+						</div>
+						<div class="total-order-row">
+							<div class="total-order-name">Итого к оплате: </div>
+							<div class="total-order-value total-price">340 482 Р.</div>
+						</div>
+						<button class="order-submit">Оформить заказ</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</main>
+{% include "partials/footer.twig" %}
