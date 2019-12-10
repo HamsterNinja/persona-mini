@@ -1497,6 +1497,57 @@ button.save-changes {
     padding: 8px 20px;
     margin-top: 40px;
 }
+.order-header-row, .order-list-row {
+    display: grid;
+    grid-template-columns: 75px 90px 160px 200px;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 0.5px solid #EBE9E8;
+}
+.order-header-column {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+.order-header-column:nth-child(2),
+.order-header-column:nth-child(3),
+.order-list-column:nth-child(2){
+    text-align: center;
+}
+.order-list-column-name {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    display: none;
+}
+.order-list-column-value {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.order-list-column-value span:before {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.order-list-column-value .sent:before{
+    background-color: #2E9B49;
+}
+.order-list-column-value .awaiting-payment:before{
+    background-color: #FFA800;
+}
+.order-list-column-value .awaiting-shipment:before{
+    background-color: #FFA800;
+}
+.order-list-column-value .canceled:before{
+    background-color: #FB4343;
+}
 @import 'pages/home';
 @import 'components/buttons';
 @import 'components/modals';
