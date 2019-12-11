@@ -1194,6 +1194,50 @@ button.order-submit {
     padding: 8px 5px;
     margin-top: 10px;
 }
+
+.registration-form-content {
+    max-width: 570px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0 50px;
+}
+.registration-form-content-title{
+    margin-bottom: 40px;
+}
+.registration-form-content-title h1{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+.registration-form-content input {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid #EDEDED;
+    margin-bottom: 10px;
+}
+.registration-form-content button {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    text-align: center;
+    background-color: #EDEDED;
+    border: 1px solid #EDEDED;
+    width: 230px;
+    padding: 8px 5px;
+    margin: 20px 0 10px;
+}
+.registration-form-content .under-form-text {
+    max-width: 340px;
+    width: 100%;
+    margin: 0;
+}
 /* modals */
 
 .alModal {
