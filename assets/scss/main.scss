@@ -261,7 +261,7 @@ a,input,button{
   	outline-width: 0;
 }
 .breadcrumbs {
-    margin: 10px 0;
+    margin: 10px 0 20px;
 }
 a.breadcrumbs__link {
     font-size: 12px;
@@ -1550,6 +1550,35 @@ button.save-changes {
 }
 .order-list-column-value .canceled:before{
     background-color: #FB4343;
+}
+.delivery_page-content {
+    max-width: 930px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.delivery_page-content h2 {
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.delivery_page-content h3 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.delivery_page-content p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+.delivery_page-content .ec-delivery{
+    margin-top: 45px;
 }
 @import 'pages/home';
 @import 'components/buttons';
