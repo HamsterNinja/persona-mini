@@ -1,3 +1,11 @@
+.sizes-table-cotent {
+    overflow: auto;
+    max-height: 90vh;
+}
+.quick-view-content {
+    max-height: 90vh;
+    overflow: auto;
+}
 .overlay.overlay--show {
     display: block;
     -webkit-animation: showModal 250ms ease-in-out;

@@ -6,6 +6,14 @@ webpackHotUpdate(0,[
 "use strict";
 
 
+$('.btn-hamburger').click(function () {
+  $(this).addClass('active');
+  $('.mobile-menu').addClass('active');
+});
+$('.btn-hamburger.active').click(function () {
+  $('.mobile-menu').removeClass('active');
+  $(this).removeClass('active');
+});
 $('.main-slick').slick({
   slidesToShow: 1,
   autoplay: false,
@@ -28,7 +36,7 @@ $('.products-slick').slick({
       slidesToScroll: 3
     }
   }, {
-    breakpoint: 600,
+    breakpoint: 767,
     settings: {
       slidesToShow: 2,
       slidesToScroll: 2
